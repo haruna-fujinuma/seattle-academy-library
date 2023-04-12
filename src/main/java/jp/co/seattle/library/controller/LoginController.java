@@ -42,10 +42,10 @@ public class LoginController {
 		UserInfo selectedUserInfo = usersService.selectUserInfo(email, password);
 
 		// ユーザーが存在すればログイン、存在しなければエラー(タスク２)
-		import java.util.Scanner;
+		
 		if (Objects.isNull(selectedUserInfo)) {
-        	model.addAttribute("errorMessage", "パスワードが一致しません。");
-        	return "loginController";
+        	model.addAttribute("errorMessage", "メールアドレスとパスワードが一致しません。");
+        	return "login";
         }else {
         	return "redirect:/home";
         }
