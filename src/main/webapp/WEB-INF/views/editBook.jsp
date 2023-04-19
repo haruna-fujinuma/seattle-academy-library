@@ -78,6 +78,7 @@
 								</form>
 								<form method="post" action="deleteBook" name="delete"></form>
 								</div>
+								
 				</main>
 </body>
 </html>
