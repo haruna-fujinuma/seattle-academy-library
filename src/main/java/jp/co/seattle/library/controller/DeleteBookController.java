@@ -10,9 +10,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
-import jp.co.seattle.library.commonutil.BookUtil;
 import jp.co.seattle.library.service.BooksService;
-import jp.co.seattle.library.service.ThumbnailService;
 
 @Controller
 public class DeleteBookController {
@@ -20,12 +18,6 @@ public class DeleteBookController {
 	
 	@Autowired
 	private BooksService booksService;
-	
-	@Autowired
-	private ThumbnailService thumbnailService;
-	
-	@Autowired
-	private BookUtil bookUtil;
 
 	@RequestMapping(value = "/deleteBook", method = RequestMethod.POST)
 	public String transitionEdit(Locale locale, int bookId, Model model) {
