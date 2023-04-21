@@ -27,6 +27,7 @@ public class DeleteBookController {
 		  booksService.deleteBook(bookId);
 		
 		  return "redirect:/home";
+		  
 	}
 
 }
