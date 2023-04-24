@@ -16,6 +16,7 @@ import jp.co.seattle.library.rowMapper.BookInfoRowMapper;
 /**
  * 書籍サービス
  * 
+ * 
  * booksテーブルに関する処理を実装する
  */
 @Service
@@ -76,7 +77,7 @@ public class BooksService {
 	 */
 	public void deleteBook(int bookId) {
 		// TODO 対象の書籍を削除するようにSQLを修正（タスク6）
-		String sql = "";
+		String sql = "DELETE FROM books WHERE books.id=?;";
 		jdbcTemplate.update(sql, bookId);
 	}
 
