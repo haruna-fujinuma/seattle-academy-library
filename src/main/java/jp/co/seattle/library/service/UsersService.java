@@ -9,6 +9,7 @@ import org.springframework.stereotype.Controller;
 import jp.co.seattle.library.dto.UserInfo;
 import jp.co.seattle.library.rowMapper.UserCountRowMapper;
 
+
 /**
  * Handles requests for the application home page.
  */
